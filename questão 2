@@ -1,0 +1,30 @@
+// Função para calcular a sequência de Fibonacci até um determinado limite
+function calcularFibonacci(limite) {
+    let fibonacci = [0, 1];
+    let i = 1;
+
+    while (fibonacci[i] + fibonacci[i - 1] <= limite) {
+        fibonacci.push(fibonacci[i] + fibonacci[i - 1]);
+        i++;
+    }
+
+    return fibonacci;
+}
+
+// Função para verificar se um número está presente na sequência de Fibonacci
+function verificarSequenciaFibonacci(numero, sequencia) {
+    return sequencia.includes(numero);
+}
+
+const limite = parseInt(prompt('Por favor, digite o limite para calcular a sequência de Fibonacci: '));
+const numero = parseInt(prompt('Agora, por favor, digite o número que você deseja verificar na sequência: '));
+
+const sequencia = calcularFibonacci(limite);
+
+console.log('Sequência de Fibonacci até o limite fornecido:', sequencia);
+
+if (verificarSequenciaFibonacci(numero, sequencia)) {
+    console.log(`${numero} faz parte da sequência de Fibonacci.`);
+} else {
+    console.log(`${numero} não faz parte da sequência de Fibonacci.`);
+}
