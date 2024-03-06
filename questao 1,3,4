@@ -1,0 +1,14 @@
+1-) SOMA = 91
+
+Portanto, ao final do processamento, o valor da variável SOMA será 91.
+
+3-)a)9      b)128      c)49     d) 100   e)13   f) não a lógica
+
+4-)Ligue o primeiro interruptor e espere um tempo.
+Desligue o primeiro interruptor e ligue o segundo interruptor.
+Entre na sala das lâmpadas.
+depois disso vamos fazer o seguinte teste
+
+Se a lâmpada estiver acesa, o segundo interruptor controla essa lâmpada.
+Se a lâmpada estiver apagada e quente, o primeiro interruptor controla essa lâmpada.
+Se a lâmpada estiver apagada e fria, o terceiro interruptor controla essa lâmpada.
